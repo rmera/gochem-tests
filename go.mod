@@ -10,6 +10,7 @@ require (
 )
 
 require (
+	github.com/klauspost/compress v1.15.9 // indirect
 	github.com/skelterjohn/go.matrix v0.0.0-20130517144113-daa59528eefd // indirect
 	gonum.org/v1/gonum v0.7.0 // indirect
 )
