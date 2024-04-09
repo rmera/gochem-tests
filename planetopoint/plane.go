@@ -12,23 +12,12 @@ import (
 //This program will align the best plane passing through a set of atoms in a molecule with the XY-plane.
 //Usage:
 func main() {
-	//	if len(os.Args) < 2 {
-	//		fmt.Printf("Usage:\n%s file.xyz [indexes.dat]\nindexes.dat is a file containing one single line, with all the atoms defining the plane separated by spaces. If it is not given, all the atoms of the molecule will be taken to define the plane.\n", os.Args[0])
-	//		os.Exit(1)
-	//	}
 	mol, err := chem.XYZFileRead("../FILES/test_plane.xyz")
 	if err != nil {
 		panic(err.Error())
 	}
 	var indexes []int
-	//if no file with indexes given, will just use all the atoms.
-	//	if len(os.Args) < 3 {
-	//		indexes = make([]int, mol.Len())
-	//		for k, _ := range indexes {
-	//			indexes[k] = k
-	//		}
-	//	} else {
-	indexes, err = scu.IndexFileParse("../FILES/indexes")
+	indexes, err = scu.IndexFileParse("../FILES/indexes") //we take the indexes from a file
 	if err != nil {
 		panic(err.Error())
 	}
