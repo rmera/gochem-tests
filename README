@@ -1,15 +1,4 @@
-This repo contains the code for the examples in the goChem wiki:
-
-www.github.com/rmera/gochem/wiki
-
-In addition, small programs that I have found useful are included.
-They perform simple tasks like aligning the XY plane with an 
-arbitrary plane, pre-optimizing a structure at sempiempirical 
-level and preparing an input for a subsequent DFT calculation, 
-calculating improper dihedral angles, among others.
-
-If you need a binary for any of these, just let me know.
-
+This repo contains a test suite for goChem. It is very similar to examples_gochem, with the difference that all inputs have been hardcoded for easier testing, and some addition here and there.
 
 LICENSE
 
